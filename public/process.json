@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    { "id": "a", "type": "input", "position": { "x": 0, "y": 0 }, "data": { "label": "We" } },
+    {
+      "id": "b",
+      "type": "position-logger",
+      "position": { "x": -100, "y": 100 },
+      "data": { "label": "drag me!" }
+    },
+    { "id": "c", "position": { "x": 100, "y": 100 }, "data": { "label": "are" } },
+    {
+      "id": "d",
+      "type": "output",
+      "position": { "x": 0, "y": 200 },
+      "data": { "label": "Concious" }
+    }
+  ],
+  "nodeTypes": {
+    "position-logger": "PositionLoggerNode"
+  },
+  "edges": [
+    { "id": "a->c", "source": "a", "target": "c", "animated": true },
+    { "id": "b->d", "source": "b", "target": "d" },
+    { "id": "c->d", "source": "c", "target": "d", "animated": true }
+  ],
+  "edgeTypes": {}
+}
